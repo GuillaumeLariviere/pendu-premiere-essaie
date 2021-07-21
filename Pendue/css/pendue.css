@@ -8,3 +8,6 @@ button.rond{
 h1{
     text-align: center;
 }
+.d-none{
+    display:none;
+}
