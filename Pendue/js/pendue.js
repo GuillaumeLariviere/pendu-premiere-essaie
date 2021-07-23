@@ -1,5 +1,6 @@
 let d = document;
 let lettres = d.querySelectorAll('.rond');
+let listeLettre;
 let Spe =[" ", "'","-"] ;
 let mots=words_list;
 let image =1;
@@ -28,6 +29,7 @@ function startGame(){
     image =1;
 
     lettres.forEach(function(listeLettre){
+         listeLettre.classList.add('rond');
         listeLettre.classList.remove('transparance');
         listeLettre.addEventListener('click',btn);
         listeLettre.removeAttribute('disabled')  ;
